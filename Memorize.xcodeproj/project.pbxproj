@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830E03C82B1B645A007694F5 /* MemorizeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E03C72B1B645A007694F5 /* MemorizeGame.swift */; };
+		830E03CA2B1B6671007694F5 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E03C92B1B6671007694F5 /* EmojiMemoryGame.swift */; };
 		83E695AE2B0D28040097D454 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E695AD2B0D28040097D454 /* MemorizeApp.swift */; };
 		83E695B02B0D28040097D454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E695AF2B0D28040097D454 /* ContentView.swift */; };
 		83E695B22B0D28050097D454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E695B12B0D28050097D454 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830E03C72B1B645A007694F5 /* MemorizeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeGame.swift; sourceTree = "<group>"; };
+		830E03C92B1B6671007694F5 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		83E695AA2B0D28040097D454 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E695AD2B0D28040097D454 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
 		83E695AF2B0D28040097D454 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				83E695AD2B0D28040097D454 /* MemorizeApp.swift */,
 				83E695AF2B0D28040097D454 /* ContentView.swift */,
+				830E03C72B1B645A007694F5 /* MemorizeGame.swift */,
+				830E03C92B1B6671007694F5 /* EmojiMemoryGame.swift */,
 				83E695B12B0D28050097D454 /* Assets.xcassets */,
 				83E695B32B0D28050097D454 /* Memorize.entitlements */,
 				83E695B42B0D28050097D454 /* Preview Content */,
@@ -141,6 +147,8 @@
 			files = (
 				83E695B02B0D28040097D454 /* ContentView.swift in Sources */,
 				83E695AE2B0D28040097D454 /* MemorizeApp.swift in Sources */,
+				830E03C82B1B645A007694F5 /* MemorizeGame.swift in Sources */,
+				830E03CA2B1B6671007694F5 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +278,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
+				DEVELOPMENT_TEAM = 268F32TVT6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -306,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
+				DEVELOPMENT_TEAM = 268F32TVT6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
