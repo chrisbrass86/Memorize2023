@@ -17,6 +17,52 @@ struct ContentView: View {
         .padding()
     }
     
+    var gameTitle: some View {
+        Text("Memorize!").font(.largeTitle).padding()
+    }
+    
+    var themeChooser: some View {
+        HStack {
+            themeVehicles
+            themeFaces
+            themeAnimals
+        }
+      
+    }
+    
+    var themeVehicles: some View {
+        themeButtonBuilder(theme: vehicles, themeSymbol: "car", themeName: "Vehicles", themeColor: Color.red, themePairCount: 2)
+    }
+    
+    var themeFaces: some View {
+        themeButtonBuilder(theme: faces, themeSymbol: "face.smiling.inverse", themeName: "Faces", themeColor: Color.yellow, themePairCount: 6)
+    }
+    
+    var themeAnimals: some View {
+        themeButtonBuilder(theme: animals, themeSymbol: "dog.circle", themeName: "Animals", themeColor: Color.green, themePairCount: 8)
+    }
+    
+    func themeButtonBuilder(theme: Array<String>, themeSymbol: String, themeName: String, themeColor: Color, themePairCount: Int) -> some View {
+            Button(action: {
+                emojis = (theme[0..<themePairCount] + theme[0..<themePairCount]).shuffled()
+                self.themeColor = themeColor
+            },
+                   label: {
+                VStack{
+                    Image(systemName: themeSymbol).imageScale(.large)
+                        .font(.title)
+                    Text(themeName).font(.caption)
+                }
+                 .padding()
+            })
+    }
+    
+    func widthThatBestFits(cardCount: Int) -> CGFloat {
+        // Annäherung
+        return 187.05*pow(CGFloat(cardCount),-0.5988)
+    }
+    
+    
     var cards: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 85))]) {
             ForEach(emojis.indices, id: \.self){ index in
@@ -28,6 +74,7 @@ struct ContentView: View {
     }
     
 }
+
 
 struct CardView: View {
     let content: String
