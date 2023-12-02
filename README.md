@@ -1,4 +1,4 @@
 # Memorize2023
-CS193P Memorize Assignment 1
+CS193P Memorize Lecture 1,2,3
 
-Assignment 1 from CS193p 
+from CS193p 
